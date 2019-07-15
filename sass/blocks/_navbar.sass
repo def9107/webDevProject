@@ -1,0 +1,19 @@
+.navbar
+  display: flex
+  justify-content: space-between
+  font-size: 20px
+  font-weight: 600
+  padding: 2.5em 0
+  &__item
+    margin: 10px
+.logo
+  margin-right: 300px
+@media (max-width: 991px)
+  .logo
+    margin-right: 150px  
+@media (max-width: 768px)
+  .navbar
+    flex-wrap: wrap
+    justify-content: center
+  .logo
+    display: none
