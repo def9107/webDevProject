@@ -1,0 +1,22 @@
+.about
+  text-align: center
+  &__block
+    margin-top: 125px
+  &-block
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    &__item
+      flex-basis: 250px
+    &__image
+      height: 65px
+      width: auto
+@media (max-width: 768px)
+  .about
+    &__block
+      margin-top: 75px      
+    &-block
+      &__item
+        margin-bottom: 30px
+        &:last-child
+          margin-bottom: 0
