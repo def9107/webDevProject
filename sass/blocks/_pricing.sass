@@ -24,15 +24,25 @@
       &:hover
         box-shadow: 0 3px 25px rgba(0, 0, 0, 0.35)  
     &__title
+      position: absolute
+      width: 130px
+      top: 45px
+      left: 35%
+      color: #ffffff
       font-size: 25px
-      margin-bottom: 35px
       font-weight: 400
       letter-spacing: 1.25px
       line-height: 1em
-      z-index: 99
+      z-index: 2
     &__price
+      position: absolute
+      top: 115px
+      width: 180px
+      left: 27%
+      color: #ffffff
       font-size: 17px
       letter-spacing: 0.85px
+      z-index: 2
       span
         font-size: 50px       
         sup
@@ -41,7 +51,7 @@
       list-style: none
       margin: 0
       margin-bottom: 50px
-      margin-top: 70px
+      margin-top: 200px
       padding: 0
       li
         display: inline-block
@@ -50,4 +60,11 @@
         padding: 10px
         padding-top: 30px
         border-bottom: 1px solid #bfbfbf
+@media (max-width: 576px)
+  .pricing
+    &-block
+      &__title
+        left: 30%
+      &__price
+        left: 23%  
         
