@@ -1,0 +1,27 @@
+.works
+  &__block
+    margin-top: 120px
+    margin-bottom: 120px
+  &-block
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    &__item
+      margin: 10px
+      width: 370px
+      height: 370px
+      overflow: hidden
+    &__image
+      width: 100%
+      height: auto
+  &-btn
+    width: 220px  
+@media (max-width: 576px)
+  .works
+    &__block
+      margin-top: 50px
+      margin-bottom: 50px
+    &-block  
+      &__item
+        width: 280px
+        height: 280px
