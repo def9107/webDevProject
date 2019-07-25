@@ -1,0 +1,80 @@
+.contact
+  color: #fff
+  background: url("../img/contact/contact-bg.jpg") #212121 no-repeat center
+  background-size: cover
+  &__block
+    margin-top: 125px
+  &-block
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    &__item
+      margin: 10px
+    &__image
+      width: 100px
+      height: 100px
+      margin: 0 auto
+      background-color: #3949ab 
+      background-repeat: no-repeat 
+      background-position: 50% 50%
+      border-radius: 50%
+    .address
+      background-image: url("../img/contact/placeholder.png")
+    .phone
+      background-image: url("../img/contact/phone-call.png")
+    .mail
+      background-image: url("../img/contact/mail.png")
+    &__text
+      text-align: center
+  &__form
+    margin: auto
+    margin-top: 80px
+    width: 90%
+  &-form
+    font-size: 20px
+    text-align: right
+    max-width: 1000px
+    .input-box
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      width: 100%
+      input
+        width: 49%
+        min-width: 250px
+        padding: 30px 20px
+        border-radius: 10px
+    textarea
+      width: 100%
+      padding: 30px 20px
+      border-radius: 10px
+      margin-top: 30px
+    input[type="submit"]
+      width: 220px
+      padding: 30px 20px
+      border-radius: 10px
+      background-color: #fff
+      margin-top: 40px
+      font-weight: 600
+      &:hover
+        cursor: pointer
+        transition: 0.2s
+        background-color: #00897b
+        border-color: #00897b
+        color: #ffffff
+      &:active
+        background-color: #00776b
+@media (max-width: 768px)
+  .contact
+    &__block
+      margin-top: 50px
+    &__form
+      margin-top: 30px
+    &-form
+      text-align: center
+      .input-box
+        input
+          margin-top: 20px
+          width: 100%
+      input[type="submit"]
+        width: 100%

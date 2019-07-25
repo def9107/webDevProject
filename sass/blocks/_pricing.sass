@@ -7,7 +7,8 @@
     justify-content: center
     flex-wrap: wrap
     &__item
-      width: 370px
+      width: 33%
+      max-width: 360px
       padding: 50px
       margin: 15px
       background-color: #fff
@@ -42,6 +43,16 @@
         padding: 10px
         padding-top: 30px
         border-bottom: 1px solid #bfbfbf
+@media (max-width: 1199px)
+  .pricing
+    &-block
+      &__item
+        width: 50%
+@media (max-width: 768px)
+  .pricing
+    &-block
+      &__item
+        width: 100%
 @media (max-width: 576px)
   .pricing
     &-block
