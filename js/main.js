@@ -32,4 +32,24 @@ $(document).ready(function(){
       }
     ]
   });
-});  
+});
+
+//section works gallery
+$(function() {
+  $("#works-block-hide").click(function() {
+    $(".hidden-area").css("display", "none");
+
+    $("#works-block-hide").css("display", "none");
+
+    $("#works-block-display").css("display", "inline-block");
+  });
+
+  $("#works-block-display").click(function() {
+    $(".hidden-area").css("display", "flex");
+
+    $("#works-block-hide").css("display", "inline-block");
+
+    $("#works-block-display").css("display", "none");
+  });
+});
+
